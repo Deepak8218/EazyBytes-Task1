@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Websites</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/215e65df6e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/deepak logo.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Devloper</p>
+                <h1>Hi, I'm <span>Deepak Singh</span><br>From Noida</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About Section -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hey! I'm Deepak, a passionate web Developer with a Bachelor's degree in Computer Science
+                        Engineering.
+                        To work with an organization where I can learn new skills and increase my abilities for the
+                        organizational
+                        goals as well as my personal growth.Can learn new technology and also adapt in new environment
+                        quickly.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frotend Developer</span><br>Create websites and web application</li>
+                            <li><span>Backend Developer</span><br>Focuses on creating and maintaining the server-side of
+                                a websites.</li>
+                            <li><span>Web Devloper</span><br>Web app development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024-2024</span><br>B.Tech in Computer Science Engineering From GNIOT</li>
+                            <li><span>2017</span><br>Secondary From ST Mary's School</li>
+                            <li><span>2019</span><br>Senior Secondary From Modern Public School</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Services section -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Application</h2>
+                    <p>the creation of a website that you interact with directly (client-side). It is the development of
+                        everything on a website that you experience including icons, buttons, fonts, layout, color, etc.
+                        With a click of a button, you see the magic happening which is submitting a form, playing a
+                        video, navigating to a new page, etc.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Backend Application</h2>
+                    <p>the server-side development of the web application. It is the part of the application where the
+                        server and database reside and the logics is build to perform operations. It includes the main
+                        features and functionalities of the application on the server. Programming languages for the
+                        backend are mainly Node.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Full stack development</h2>
+                    <p>the development of both front end (client side) and back end (server side) portions of web
+                        applications. If you want to learn in full structure form then you should enrol in our Full
+                        stack devloper course! You'll learn to create powerful web applications from scratch, mastering
+                        both front-end and back-end skills.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Portfolio Section -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Cricket App</h3>
+                        <p>A JavaScript-based cricket game where players make strategic choices like batting, bowling,
+                            or taking a wicket. The computer responds with its move, and the result is
+                            displayed on the screen</p>
+                        <a href="https://github.com/Deepak8218/Cricket-"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Todo App</h3>
+                        <p>To-do lists offer a way to increase productivity, stopping you from forgetting things, helps
+                            prioritise tasks, manage tasks effectively, use time wisely and improve time management as
+                            well as workflow.</p>
+                        <a href="https://github.com/Deepak8218/Todo-App"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Calculator App</h3>
+                        <p>A calculator app built with HTML, CSS, and JavaScript provides a simple yet functional
+                            interface for performing basic arithmetic operations. The HTML structure lays out buttons
+                            for numbers and operators, while CSS styles the interface to make it visually appealing and
+                            user-friendly. JavaScript handles the logic behind the calculations, processing inputs from
+                            the user and displaying results in real-time. This project is ideal for practicing DOM
+                            manipulation, event handling, and integrating basic mathematicalfunctions.</p>
+                        <a href="https://github.com/Deepak8218/Calculator-App"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Deepak8218" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- Contact  -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>deepakprince917@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8218603720</p>
+                    <div class="social-icon">
+                        <a href="https://x.com/heartless725395?t=okNjL4HUURWl7FSKNCZVAQ&s=09"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ig_heartless_04?igsh=MTlkbDV2bWlqN3MyYw=="><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/deepak-singh-1346b1225"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Deepak8218"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="images/Deepak.resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="myForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea><br><br>
+                        
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <div id="messageBox" style="margin-top: 20px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Deepak. | All Right Reserved</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+   <script>
+    // Get the form and message span
+const form = document.getElementById('dataForm');
+const messageSpan = document.getElementById('msg');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault(); // Prevent page reload
+
+    // Get form data
+    const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value,
+    };
+
+    // Send data to backend using fetch
+    try {
+        const response = await fetch('http://localhost:5000/api/submit-form', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            messageSpan.textContent = 'Form submitted successfully!';
+            messageSpan.style.color = 'green';
+            form.reset(); // Clear form fields
+        } else {
+            messageSpan.textContent = 'Error: ' + result.message;
+            messageSpan.style.color = 'red';
+        }
+    } catch (err) {
+        messageSpan.textContent = 'Error: Could not submit form';
+        messageSpan.style.color = 'red';
+    }
+});
+
+   </script>
+
+   <script src="script.js"></script>
+
+</body>
+
+</html>
