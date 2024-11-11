@@ -44,13 +44,11 @@ app.post('/api/submit-form', async (req, res) => {
   try {
 
     const form = new FormData(req.body);
-
-
     await form.save();
-
-
     res.status(200).json({ message: 'Data submitted successfully!' });
-  } catch (error) {
+
+  }
+  catch (error) {
     console.error('Error saving data:', error);
     res.status(500).json({ message: 'Failed to submit data.' });
   }
