@@ -23,6 +23,8 @@ mongoose.connect(mongoURI)
 //   .then(() => console.log('Connected to MongoDB'))
 //   .catch(err => console.log('Error connecting to MongoDB:', err));
 
+
+
 // Schema and Model for form data
 const formSchema = new mongoose.Schema({
   name: String,
@@ -32,21 +34,21 @@ const formSchema = new mongoose.Schema({
 
 const FormData = mongoose.model('FormData', formSchema);
 
-// Route to serve index.html
+
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// API route to handle form submission
+
 app.post('/api/submit-form', async (req, res) => {
   try {
-    // Create new form data document
+
     const form = new FormData(req.body);
-    
-    // Save data to MongoDB
+
+
     await form.save();
-    
-    // Send success response
+
+
     res.status(200).json({ message: 'Data submitted successfully!' });
   } catch (error) {
     console.error('Error saving data:', error);
@@ -54,7 +56,7 @@ app.post('/api/submit-form', async (req, res) => {
   }
 });
 
-// Start the server
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
@@ -73,5 +75,3 @@ app.listen(PORT, () => {
 
 
 
-// darkweb8218
-// lfUiDalbYWJitb3d
