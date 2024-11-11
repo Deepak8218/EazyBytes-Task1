@@ -12,8 +12,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 // MongoDB connection (without deprecated options)
 
 
-
-
 const mongoURI = 'mongodb+srv://darkweb8218:lfUiDalbYWJitb3d@cluster0.lou8n.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(mongoURI)
